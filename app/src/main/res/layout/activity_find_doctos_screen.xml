@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindDoctosScreen">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/medium"
+        android:text="@string/appoint_doc2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/simple_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.122">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinner"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:enabled="true"
+                app:endIconDrawable="@drawable/icon_dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerSelectDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Select Doctor"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:enabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/spinnerDatePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:hint="Select Date"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinner3"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:enabled="true"
+                app:endIconDrawable="@drawable/icon_dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner2">
+
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerTimeSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Select Time"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="52dp"
+
+                android:fontFamily="@font/regular"
+                android:text="@string/select_age"
+                android:textColor="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_0_10"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/spinner3"
+                app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_0_10"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/edit_bg_small"
+                android:text="0-10"
+                android:textColor="@color/hint_small_text_color"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintEnd_toStartOf="@+id/btn_10_30"
+                app:layout_constraintTop_toBottomOf="@+id/spinner3"
+                app:layout_constraintVertical_bias="0.857" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_10_30"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/edit_bg_small"
+                android:text="10-30"
+                android:textColor="@color/hint_small_text_color"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_0_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_0_10"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_75"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/edit_bg_small"
+                android:text="75+"
+
+                android:textColor="@color/hint_small_text_color"
+                app:layout_constraintEnd_toEndOf="@+id/btn_10_30"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_10_30"
+                app:layout_constraintTop_toBottomOf="@+id/btn_10_30" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_30_50"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/edit_bg_small"
+                android:text="30-50"
+                android:textColor="@color/hint_small_text_color"
+                app:layout_constraintEnd_toEndOf="@+id/btn_0_10"
+                app:layout_constraintStart_toStartOf="@+id/btn_0_10"
+                app:layout_constraintTop_toBottomOf="@+id/btn_0_10" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:text="@string/amount_payable"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_amount"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="@drawable/button_unfilled"
+                android:backgroundTint="#FFB3B7D3"
+                android:fontFamily="@font/medium"
+                android:text="@string/fixed_payable_amount"
+                android:textColor="@color/green"
+                app:layout_constraintEnd_toEndOf="@+id/btn_75"
+                app:layout_constraintStart_toStartOf="@+id/btn_30_50"
+                app:layout_constraintTop_toBottomOf="@+id/btn_30_50" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/button_filled"
+                android:fontFamily="@font/regular"
+                android:text="@string/continue_paymeny"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_amount"
+                app:layout_constraintHorizontal_bias="0.74"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/btn_amount" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_3sdp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:src="@drawable/placeholder"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_30ssp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_backgreen" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/bold"
+                android:inputType="text"
+                android:text="@string/user"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="@+id/profileImage"
+                app:layout_constraintStart_toStartOf="@+id/profileImage"
+                app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:inputType="textEmailAddress"
+                android:text="@string/email"
+                android:textColor="@color/hint_small_text_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/name"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="@dimen/_3sdp"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/user"
+                android:inputType="text"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="@color/hint_small_text_color"
+                android:textColorHint="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/email"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <EditText
+                android:id="@+id/mobilenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="@dimen/_3sdp"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/hintnum"
+                android:inputType="number"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="@color/hint_small_text_color"
+                android:textColorHint="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/name1"
+                app:layout_constraintStart_toStartOf="@+id/name1"
+                app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="@dimen/_3sdp"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/hintcountry"
+                android:inputType="text"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="@color/hint_small_text_color"
+                android:textColorHint="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/mobilenum"
+                app:layout_constraintStart_toStartOf="@+id/mobilenum"
+                app:layout_constraintTop_toBottomOf="@+id/mobilenum" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="@dimen/_3sdp"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/hintaddress"
+                android:inputType="text"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="@color/hint_small_text_color"
+                android:textColorHint="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/country"
+                app:layout_constraintStart_toStartOf="@+id/country"
+                app:layout_constraintTop_toBottomOf="@+id/country" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="@dimen/_3sdp"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/hintage"
+                android:inputType="number"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="@color/hint_small_text_color"
+                android:textColorHint="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/address"
+                app:layout_constraintStart_toStartOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <EditText
+                android:id="@+id/email1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/edit_text_bg"
+                android:elevation="@dimen/_3sdp"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/hintemail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="@color/hint_small_text_color"
+                android:textColorHint="@color/hint_small_text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/age"
+                app:layout_constraintStart_toStartOf="@+id/age"
+                app:layout_constraintTop_toBottomOf="@+id/age" />
+
+            <TextView
+                android:id="@+id/tvForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:text="Update Password"
+                android:gravity="center"
+                android:background="@drawable/button_unfilled"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="@+id/email1"
+                app:layout_constraintStart_toStartOf="@+id/email1"
+                app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_filled"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/email1"
+                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintStart_toStartOf="@+id/email1"
+                app:layout_constraintTop_toBottomOf="@+id/tvForgetPassword" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

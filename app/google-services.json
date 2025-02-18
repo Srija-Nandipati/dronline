@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "354355069672",
+    "firebase_url": "https://doctor-online-e6559-default-rtdb.firebaseio.com",
+    "project_id": "doctor-online-e6559",
+    "storage_bucket": "doctor-online-e6559.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354355069672:android:605fefe44abb766446bf5d",
+        "android_client_info": {
+          "package_name": "com.example.doctoronline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354355069672-g1ubn2gbdgb07mfls08mhg9qgcsc0m1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doctoronline",
+            "certificate_hash": "bb2765d141d44cdcb932eabc9ef33cf196a45ed0"
+          }
+        },
+        {
+          "client_id": "354355069672-17ijfhqf3m9tqmmh6nisqi2b24bi4867.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqL9qN_taycfhQ41ifitOuAlaYVr1A5wE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354355069672-17ijfhqf3m9tqmmh6nisqi2b24bi4867.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354355069672:android:881a03fb9123336a46bf5d",
+        "android_client_info": {
+          "package_name": "com.example.doctoronlineAdmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354355069672-17ijfhqf3m9tqmmh6nisqi2b24bi4867.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqL9qN_taycfhQ41ifitOuAlaYVr1A5wE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354355069672-17ijfhqf3m9tqmmh6nisqi2b24bi4867.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

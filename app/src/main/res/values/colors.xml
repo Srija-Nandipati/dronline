@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_small_text_color">#677294</color>
+    <color name="text_main">#000000</color>
+    <color name="green">#0EBE7F</color>
+    <color name="toolbar_green_lite">#03CAA0</color>
+    <color name="toolbar_green">#0EBE93</color>
+    <color name="appointmet_clr_light">#B3B7D3</color>
+    <color name="appointmet_clr_dark">#797972</color>
+    <color name="cart_txt_clr">#333333</color>
+
+
+</resources>
